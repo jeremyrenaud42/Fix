@@ -234,6 +234,21 @@ function zipTweak
     }
 }
 
+function Tweaking
+{
+    $path = Test-Path ".\Source\Tweak\Tweaking.com - Windows Repair\Repair_Windows.exe"
+    $desktoppath = test-path "C:\Users\$env:UserName\Desktop\Tweaking.com - Windows Repair\Repair_Windows.exe"
+    if($path)
+    {
+        if($desktoppath)
+        {
+            Start-Process "C:\Users\$env:UserName\Desktop\Tweaking.com - Windows Repair\Repair_Windows.exe"
+        }
+        Copy-Item ".\Source\Tweak\Tweaking.com - Windows Repair" -Recurse -Destination "C:\Users\$env:UserName\Desktop\Tweaking.com - Windows Repair"
+        Start-Process "C:\Users\$env:UserName\Desktop\Tweaking.com - Windows Repair\Repair_Windows.exe"
+    }
+}
+
 function zipRecup
 {
     $sourcepath = test-Path ".\Source"
@@ -396,7 +411,8 @@ switch ($choix)
 1{Start-Process "$PSScriptRoot\Source\Tweak\FixWin10\FixWin 10.2.2.exe";Break}
 2{Start-Process "$PSScriptRoot\Source\Tweak\FixWin8\FixWin 2.2.exe";break}
 3{Start-Process "$PSScriptRoot\Source\Tweak\FixWin7\FixWin v 1.2.exe";Break}
-4{Start-Process "$PSScriptRoot\Source\Tweak\Tweaking.com - Windows Repair\Repair_Windows.exe";Break}
+#4{Start-Process "$PSScriptRoot\Source\Tweak\Tweaking.com - Windows Repair\Repair_Windows.exe";Break} 
+4{Tweaking;Break} 
 5{Start-Process "$PSScriptRoot\Source\Tweak\Ultimate Windows Tweaker w10\Ultimate Windows Tweaker 4.8.exe";Break}
 6{Start-Process "$PSScriptRoot\Source\Tweak\Ultimate Windows Tweaker w11\Ultimate Windows Tweaker 5.0.exe";break}
 }
