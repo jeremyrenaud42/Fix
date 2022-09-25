@@ -100,6 +100,7 @@ $sourcepath = test-Path ".\Source"
     {
         New-Item ".\Source" -ItemType Directory | Out-Null #Créer le dossier source si il n'est pas là
     }
+    Invoke-WebRequest 'https://raw.githubusercontent.com/jeremyrenaud42/Fix/main/Log.txt' -OutFile .\Source\Log.txt
 
 function zipComIntRep
 {
