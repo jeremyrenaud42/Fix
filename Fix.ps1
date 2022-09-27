@@ -76,6 +76,7 @@ $driveletter = $pwd.drive.name
 $root = "$driveletter" + ":"
 
 set-location "$root\\_Tech\\Applications\\fix" #met la location au repertoir actuel
+Import-Module "$root\_Tech\Applications\Source\update.psm1"
 
 $scriptDir = 
     if (-not $PSScriptRoot) 
