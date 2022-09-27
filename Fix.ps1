@@ -206,18 +206,18 @@ function zipDDU
 function zipMinitool
 {
     $sourcepath = test-Path ".\Source"
-    $sminitoolpath = test-Path ".\Source\MiniTool Partition Wizard 12"
+    $sminitoolpath = test-Path ".\Source\Partition_Wizard"
     if($sminitoolpath -eq $false)
     {
         if($sourcepath -eq $false)
         {
             New-Item ".\Source" -ItemType Directory
         }
-    Invoke-WebRequest 'https://ftp.alexchato9.com/public/file/aITZmbNnZUyMQ45jiiocew/MiniTool%20Partition%20Wizard%2012.zip' -OutFile ".\Source\MiniTool Partition Wizard 12.zip"
-    Expand-Archive ".\Source\MiniTool Partition Wizard 12.zip" .\Source
-    Remove-Item ".\Source\MiniTool Partition Wizard 12.zip"
+    Invoke-WebRequest 'https://ftp.alexchato9.com/public/file/XqWu-SWMYUK0NIeIeo9hLA/Partition_Wizard.zip' -OutFile ".\Source\Partition_Wizard.zip"
+    Expand-Archive ".\Source\Partition_Wizard.zip" .\Source
+    Remove-Item ".\Source\Partition_Wizard.zip"
     }
-    Start-Process ".\Source\MiniTool Partition Wizard 12\partitionwizard.exe"
+    Start-Process ".\Source\Partition_Wizard.zip\partitionwizard.exe"
 }
 function zipTweak
 {
