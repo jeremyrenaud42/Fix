@@ -218,7 +218,7 @@ function zipMinitool
     Expand-Archive ".\Source\Partition_Wizard.zip" .\Source
     Remove-Item ".\Source\Partition_Wizard.zip"
     }
-    Start-Process ".\Source\Partition_Wizard.zip\partitionwizard.exe"
+    Start-Process ".\Source\Partition_Wizard\partitionwizard.exe"
 }
 function zipTweak
 {
