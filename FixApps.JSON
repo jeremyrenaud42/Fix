@@ -1,0 +1,62 @@
+{
+    "DDU": {
+      "InstalledStatus": "0",
+      "path64": null,
+      "path32": null,
+      "pathAppData": null,
+      "WingetName": null,
+      "ChocoName": null,
+      "RemoteName": null,
+      "RemoteLink": null
+    },
+    "WFD": {
+      "InstalledStatus": "0",
+      "path64": null,
+      "path32": null,
+      "pathAppData": null,
+      "WingetName": null,
+      "ChocoName": null,
+      "RemoteName": null,
+      "RemoteLink": null
+    },
+    "WinDirStat": {
+      "InstalledStatus": "0",
+      "path64": null,
+      "path32": null,
+      "pathAppData": null,
+      "WingetName": null,
+      "ChocoName": null,
+      "RemoteName": null,
+      "RemoteLink": null
+    },
+    "InternetRepair": {
+      "InstalledStatus": "0",
+      "path64": null,
+      "path32": null,
+      "pathAppData": null,
+      "WingetName": null,
+      "ChocoName": null,
+      "RemoteName": null,
+      "RemoteLink": null
+    },
+    "Minitool": {
+      "InstalledStatus": "0",
+      "path64": null,
+      "path32": null,
+      "pathAppData": null,
+      "WingetName": null,
+      "ChocoName": null,
+      "RemoteName": null,
+      "RemoteLink": null
+    },
+    "Tweaking": {
+      "InstalledStatus": "0",
+      "path64": null,
+      "path32": null,
+      "pathAppData": null,
+      "WingetName": null,
+      "ChocoName": null,
+      "RemoteName": null,
+      "RemoteLink": null
+    }
+}
